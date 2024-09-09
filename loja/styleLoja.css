@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(59, 54, 40);
+    font-family:Amaranth;
+}
+.titulo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 245, 199); 
+    text-align: center;
+    
+}
+button{
+    background-color: rgba(202, 183, 160, 0.938);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 100px;
+    transition: 0.9s;
+    color: rgba(121, 103, 59, 0.897);
+    width: 10%;
+    padding-left: 10%;
+}
+#HOME
+{
+	display: flex;
+    padding-right: 70px;
+    padding-left: 30px;
+    text-align: center;
+    font-family: Amaranth;
+}
+#HOME:hover{
+    color: rgba(156, 144, 76, 0.541);
+}
+#produtos{
+    display: flex;
+    padding-right: 90%;
+    font-family: Amaranth, serif;
+    
+}
+#produtos:hover{
+    color: rgba(156, 144, 76, 0.541);
+}
+#carrinho{
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2px;
+}
+#carrinho:hover{
+    color: rgba(156, 144, 76, 0.541);
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(216, 200, 160);
+    padding: 2px;
+ 
+}
+.content{
+    position: relative;
+    top: -400px;
+    text-align: start;
+}
+.capa{
+    transition: 0.1s;
+    width:50%;
+    position: relative;
+    left: 0px;
+    
+}
+h2{
+
+    color:#956c41;
+    position: absolute;
+    top: 27%;
+    left: 55%;
+    text-align: center;
+    width: 30%;
+
+}
+@media (min-width:200px) and (max-width: 400px){
+    .texto{
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    }
+}
+@media (min-width: 400px) and (max-width: 600px){
+    .texto{
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    }
+}
+@media (min-width: 600px) and (max-width: 800px){
+    .texto{
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    }
+}
+@media (min-width:800px) and (max-width: 1200px){
+    .texto{
+        font-size: 64px;
+        position: absolute;
+        top: 200px;
+    }
+}
+@media (min-width:1200px) and (max-width: 3000px){
+    .texto{
+
+        font-size: 100px;
+        position: absolute;
+        top: 200px;
+    }
+}
+
+#footer_{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(226, 221, 209);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(59, 54, 40);
+    font-family:Amaranth;
+}
+.titulo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 245, 199); 
+    text-align: center;
+    
+}
+button{
+    background-color: rgba(202, 183, 160, 0.938);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 100px;
+    transition: 0.9s;
+    color: rgba(121, 103, 59, 0.897);
+    width: 10%;
+    padding-left: 10%;
+}
+#HOME
+{
+	display: flex;
+    padding-right: 70px;
+    padding-left: 30px;
+    text-align: center;
+    font-family: Amaranth;
+}
+#HOME:hover{
+    color: rgba(156, 144, 76, 0.541);
+}
+#produtos{
+    display: flex;
+    padding-right: 90%;
+    font-family: Amaranth, serif;
+    
+}
+#produtos:hover{
+    color: rgba(156, 144, 76, 0.541);
+}
+#carrinho{
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2px;
+}
+#carrinho:hover{
+    color: rgba(156, 144, 76, 0.541);
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(216, 200, 160);
+    transform-origin: 100%;
+}
+.cards {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+   
+}
+.card {
+	background-color: #f2f2f2;
+	color: black; 
+	padding: 1rem;
+	height: auto; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+    transition: 2s;
+}
+
+.card h2 {
+	font-family: Amaranth;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.card p {
+	font-family: Amaranth;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.compra {
+    display: flex;
+    padding-right: 90px;
+    padding-left: 30px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-family:Amaranth;
+}
+.compra:hover{
+    background-color: rgba(231, 223, 196, 0.938)
+}
+
+
+@media (min-width:200px) and (max-width: 400px) {
+	.cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (min-width: 400px) and (max-width: 600px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 600px)  {
+	.cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+#footer_{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(226, 221, 209);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
