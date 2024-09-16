@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+</head>
+    <style>
+
+        #semaforo{
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+            padding: 50px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .lampada{
+            width: 150px;
+            height: 150px;
+            margin-top: 5px;
+            border-radius: 90px;
+        }
+
+        #red{
+            background-color: rgb(34, 16, 16);
+        }
+        #yellow{
+            background-color: rgb(48, 48, 38);
+        }
+        #green{
+            background-color: rgb(25, 41, 25);
+        }
+
+
+
+    </style>
+
+<body>
+    
+    <div id="semaforo">
+        
+        <div class="lampada" id="red"></div>
+        <div class="lampada" id="yellow"></div>
+        <div class="lampada" id="green"></div>
+
+    </div>
+
+    <script>
+
+        function red(){
+            var cor = document.getElementById('red'); 
+            cor.style.backgroundColor = 'red'
+
+            setTimeout(function() {
+                cor.style.backgroundColor = 'rgb(25, 41, 25)'
+                green()
+            }, 10000)
+        }
+
+    
+        function yellow(){
+            var cor = document.getElementById('yellow'); 
+            cor.style.backgroundColor = "yellow"
+
+            setTimeout(function() {
+                cor.style.backgroundColor = 'rgb(25, 41, 25)'
+                red()
+            }, 5000)
+        }
+
+        function green(){
+            var cor = document.getElementById('green'); 
+            cor.style.backgroundColor = 'rgb(53, 207, 53)'
+
+            setTimeout(function() {
+                cor.style.backgroundColor = 'rgb(25, 41, 25)'
+                yellow()
+            }, 10000)
+        }
+
+        green()
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
