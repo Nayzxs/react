@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(67, 115, 185, 0.719);
+    font-family: Arial, sans-serif;
+}
+#caixaEntrada{
+    background-color: white;
+    padding: 70px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 35%;
+    margin: 25px;
+    
+}
+#titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#tarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(73, 73, 73, 0.925);
+    font-size: 14px;
+}
+input{
+    border-radius: 10px;
+    padding: 10px;
+}
+#botaoTask{
+    padding: 9px;
+    border-radius: 5px;
+    width: 60%;
+    border: none;
+    background-color: #719da8;
+}
+#botaoTask:hover {
+    background-color: #88a4afe7;
+}
+#caixaSaida{
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #88a4afe7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.remove-btn {
+    background: #719da8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.remove-btn:hover {
+    background: #88a4afe7;
+}
